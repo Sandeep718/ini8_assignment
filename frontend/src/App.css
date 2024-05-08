@@ -1,0 +1,85 @@
+/* App.css */
+
+.App {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ddd;
+  margin-top: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+.add-user-btn {
+  padding: 10px 20px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.buttons > button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff; 
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
+}
+
+.buttons > button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+.field-error input {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  button {
+    width: 100%;
+  }
+}
